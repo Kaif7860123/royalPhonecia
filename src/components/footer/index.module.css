@@ -1,7 +1,6 @@
 .container {
   display: flex;
   border-top: 1px solid white;
-  /* flex-wrap: wrap; Allow wrap for smaller screens */
 }
 
 .leftPanel {
@@ -135,9 +134,7 @@
   width: 100%;
 }
 
-/* -------------------------------
-   Responsive Media Queries
----------------------------------*/
+ 
 
 @media screen and (max-width: 1024px) {
   .leftPanel {

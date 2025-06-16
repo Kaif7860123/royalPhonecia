@@ -12,12 +12,10 @@ const Header = () => {
     <>
       <div className={styles.header}>
         <div className={styles.imgCont}>
-          {/* Toggle Button */}
           <div className={styles.hamburger} onClick={handleToggle}>
             {menuOpen ? <FaTimes /> : <FaBars />}
           </div>
 
-          {/* Navigation List */}
           <div
             className={`${styles.listCont} ${
               menuOpen ? styles.showMenu : ""

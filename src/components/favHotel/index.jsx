@@ -12,7 +12,6 @@ const FavHotel = () => {
     <>
       <div className={styles.hotelCont}>
         <div className={styles.hotelImgCont}>
-          {/* <img src={propertDefault} /> */}
           <div className={styles.textContainer}>
             <div className={styles.textCont}>
               <div className={styles.textBox}>
