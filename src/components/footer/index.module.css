@@ -9,7 +9,7 @@
   padding: 4rem;
   background-color: #33688a;
   justify-content: space-around;
-  flex-wrap: wrap;
+  /* flex-wrap: wrap; */
 }
 
 .navSection {
@@ -147,9 +147,7 @@
     padding: 2rem;
   }
 
-  .container {
-    flex-direction: column;
-  }
+
 
   .navItem {
     font-size: 1.4rem;
@@ -200,5 +198,8 @@
 
   .contacts > p {
     font-size: 0.9rem;
+  }
+    .container {
+    flex-direction: column;
   }
 }

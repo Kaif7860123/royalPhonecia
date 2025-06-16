@@ -1,6 +1,6 @@
 .facilityCont {
   display: flex;
-  flex-wrap: wrap;
+  /* flex-wrap: wrap; */
   justify-content: space-evenly;
   margin: 100px 0px;
   gap: 30px;
@@ -51,6 +51,9 @@
 }
 
 @media screen and (max-width: 480px) {
+  .facilityCont{
+    flex-wrap: wrap;
+  }
   .box h1 {
     font-size: 22px;
   }

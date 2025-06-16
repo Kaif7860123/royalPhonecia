@@ -70,7 +70,7 @@
 
 .facility {
   display: flex;
-  flex-wrap: wrap;
+  /* flex-wrap: wrap; */
   justify-content: space-evenly;
   gap: 20px;
 }
@@ -92,8 +92,9 @@
 
 .box1 {
   position: absolute;
-  left: 35%;
-  top: 30%;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%,-50%);
 }
 
 .box1 p {
@@ -112,8 +113,15 @@
   transform: scale(1.5);
   transition: all 0.5s ease-in-out;
 }
-
+/* @media screen and (max-width: 1024px) {
+.facility{
+  flex-wrap: wrap;
+}
+} */
 @media screen and (max-width: 768px) {
+  .facility{
+  flex-wrap: wrap;
+}
   .hotelImgCont {
     height: 350px;
   }
@@ -132,6 +140,7 @@
   }
   .box1 p {
     font-size: 40px;
+    text-align: center;
   }
 }
 
@@ -156,7 +165,10 @@
     height: 250px;
   }
   .box1 p {
-    font-size: 30px;
+   
+
+      font-size: 30px;
+    
   }
   .facility {
     flex-direction: column;
