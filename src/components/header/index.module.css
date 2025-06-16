@@ -1,0 +1,206 @@
+.header {
+  background-color: rgb(113, 113, 243);
+  width: 100%;
+
+}
+
+.imgCont {
+  position: relative;
+  height: 100vh;
+  width: 100%;
+  background-image: url("../../assets/PropertyVarient.png");
+  background-position: bottom;
+  animation: zoomInOut 4s ease-in-out infinite;
+  transition: transform 2s;
+  object-fit: cover;
+}
+
+@keyframes zoomInOut {
+  0% {
+    background-position: bottom;
+  }
+  50% {
+    background-position: center;
+  }
+  100% {
+    background-position: center;
+  }
+}
+
+.listCont {
+  width: 100%;
+}
+
+.listCont > ul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  margin: 0;
+  list-style: none;
+  column-gap: 30px;
+  row-gap: 10px;
+  font-family: sans-serif;
+  padding: 12px 0;
+  font-size: 12px;
+  color: rgb(248, 248, 248);
+}
+
+.listCont > ul > li {
+  position: relative;
+  padding: 5px 0;
+  cursor: pointer;
+}
+
+.listCont > ul > li::after {
+  content: "";
+  position: absolute;
+  bottom: -12px;
+  left: 0;
+  width: 100%;
+  height: 1px;
+  background-color: white;
+  transform: scaleX(0);
+  transition: transform 0.3s ease;
+  transform-origin: center;
+}
+
+.listCont > ul > li:hover::after {
+  transform: scaleX(1);
+}
+
+.textCont {
+  text-align: center;
+  color: white;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-family: sans-serif;
+  padding: 0 20px;
+}
+
+.textCont h1 {
+  font-size: 70px;
+}
+
+.textCont p {
+  color: rgb(224, 222, 222);
+  font-size: 15px;
+}
+
+@media screen and (max-width: 768px) {
+  .textCont h1 {
+    font-size: 40px;
+  }
+  .textCont p {
+    font-size: 12px;
+  }
+  .listCont > ul {
+    column-gap: 15px;
+    font-size: 10px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .textCont h1 {
+    font-size: 28px;
+  }
+  .textCont p {
+    font-size: 10px;
+  }
+  .listCont > ul {
+    flex-direction: column;
+    gap: 8px;
+    font-size: 10px;
+  }
+}
+
+.header {
+  position: relative;
+  background: #f2f2f2;
+}
+
+.imgCont {
+  width: 100%;
+  margin: auto;
+  position: relative;
+}
+
+.hamburger {
+  display: none;
+  font-size: 24px;
+  color: #fff;
+  cursor: pointer;
+  position: absolute;
+  top: 20px;
+  right: 10px;
+  z-index: 10;
+}
+
+.listCont {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+.listCont ul {
+  display: flex;
+  list-style: none;
+  gap: 2rem;
+  font-size: 1rem;
+}
+
+.textCont {
+  text-align: center;
+}
+
+.textCont h1 {
+  font-size: 3rem;
+  margin: 10px 0;
+}
+
+.textCont p {
+  font-size: 1.2rem;
+  color: #777;
+}
+
+/* ===== Responsive Toggle ===== */
+@media screen and (max-width: 768px) {
+  .hamburger {
+    display: block;
+  }
+
+  .listCont {
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    padding: 1rem;
+    position: absolute;
+    top: 60px;
+    left: 0;
+    right: 0;
+    z-index: 9;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  }
+
+  .listCont ul {
+    flex-direction: column;
+    gap: 1rem;
+    
+  }
+
+  .showMenu {
+    display: flex !important;
+  }
+
+  .textCont h1 {
+    font-size: 2.2rem;
+  }
+
+  .textCont p {
+    font-size: 1rem;
+  }
+}
+
+ 

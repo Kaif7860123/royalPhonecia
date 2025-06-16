@@ -1,0 +1,126 @@
+.corporateCont {
+  background: linear-gradient(
+    180deg,
+    rgba(199, 199, 204, 0) 0%,
+    rgba(107, 107, 121, 0.6) 44.82%,
+    #2F6587 100%
+  );
+  position: relative;
+}
+
+.imgCont {
+  width: 85%;
+  height: 90vh;
+  margin: auto;
+  position: relative;
+  padding-bottom: 100px;
+}
+
+.imgCont img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.imgCont marquee {
+  width: 100%;
+  font-size: 70px;
+  color: white;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  white-space: nowrap;
+  overflow: hidden;
+}
+
+/* Text Container over Image */
+.textContainer {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border: 1px solid rgb(211, 209, 209);
+  background: transparent;
+  padding: 16px;
+  width: 30%;
+}
+
+.textCont {
+  background-color: white;
+  padding: 15px;
+}
+
+.textBox {
+  line-height: 1.3rem;
+  background-color: white;
+  padding: 10px;
+  border: 1px solid gray;
+}
+
+.textBox p {
+  text-align: center;
+  font-size: 16px;
+  color: rgb(150, 148, 148);
+  line-height: 1.08rem;
+}
+
+.textBox h1 {
+  text-align: center;
+}
+
+/* Responsive Styles */
+@media screen and (max-width: 1024px) {
+  .textContainer {
+    width: 50%;
+  }
+
+  .imgCont marquee {
+    font-size: 50px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .imgCont {
+    height: 70vh;
+  }
+
+  .textContainer {
+    width: 70%;
+    padding: 10px;
+  }
+
+  .imgCont marquee {
+    font-size: 40px;
+  }
+
+  .textBox p {
+    font-size: 14px;
+  }
+
+  .textBox h1 {
+    font-size: 22px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .imgCont {
+    height: 60vh;
+  }
+
+  .textContainer {
+    width: 85%;
+  }
+
+  .imgCont marquee {
+    font-size: 28px;
+  }
+
+  .textBox p {
+    font-size: 13px;
+  }
+
+  .textBox h1 {
+    font-size: 20px;
+  }
+}

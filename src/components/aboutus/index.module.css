@@ -1,0 +1,145 @@
+.aboutCont {
+  border-bottom: 1px solid gray;
+  padding-bottom: 40px;
+}
+
+.imgCont {
+  width: 100%;
+  margin: auto;
+}
+
+.imgCont > img {
+  width: 100%;
+}
+
+.aboutBox {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  gap: 20px;
+}
+
+.images {
+  height: 800px;
+  flex: 1 1 300px;
+}
+
+.aboutImgCont1,
+.aboutImgCont2,
+.aboutImgCont3 {
+  height: 400px;
+  overflow: hidden;
+  background-position: bottom;
+  animation: zoomInOut 4s ease-in-out infinite;
+  transition: transform 2s;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 40px;
+  background-size: cover;
+}
+
+.aboutImgCont1 {
+  background-image: url("../../assets/handshake.png");
+}
+
+.aboutImgCont2 {
+  background-image: url("../../assets/bedroom.png");
+}
+
+.aboutImgCont3 {
+  background-image: url("../../assets/dining.png");
+}
+
+@keyframes zoomInOut {
+  0% {
+    background-position: bottom;
+  }
+  50% {
+    background-position: center;
+  }
+  100% {
+    background-position: center;
+  }
+}
+
+.texts {
+  display: flex;
+  justify-content: center;
+  width: 50%;
+  margin: auto;
+}
+
+.texts p {
+  font-size: 63px;
+  text-align: center;
+}
+
+.aboutTexts {
+  width: 25%;
+}
+
+.aboutTexts p {
+  font-size: 17px;
+  color: rgb(151, 149, 149);
+  text-align: justify;
+}
+
+.facilities {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  gap: 20px;
+}
+
+.height {
+  display: flex;
+  flex-direction: column;
+  height: 600px;
+  width: 30%;
+  overflow-y: scroll;
+}
+
+.height::-webkit-scrollbar {
+  display: none;
+}
+
+/* Responsive Styles */
+@media screen and (max-width: 1024px) {
+  .texts p {
+    font-size: 40px;
+  }
+  .aboutTexts {
+    width: 80%;
+    margin: auto;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .aboutBox,
+  .facilities {
+    flex-direction: column;
+    align-items: center;
+  }
+  .texts {
+    width: 90%;
+  }
+  .texts p {
+    font-size: 30px;
+  }
+  .aboutTexts {
+    width: 90%;
+  }
+  .height {
+    width: 90%;
+    height: auto;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .texts p {
+    font-size: 24px;
+  }
+  .aboutTexts p {
+    font-size: 15px;
+  }
+}

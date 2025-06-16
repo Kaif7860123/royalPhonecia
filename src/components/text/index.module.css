@@ -1,0 +1,52 @@
+.imgCont {
+  width: 100%;
+  height: 300px;
+  margin: auto;
+}
+
+.imgCont > img {
+  width: 100%;
+  height: 200px;
+  object-fit: contain;
+}
+
+.texts {
+  margin: 100px 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0 20px;
+  text-align: center;
+}
+
+.texts > p {
+  width: 50%;
+  font-size: 35px;
+  color: rgb(88, 86, 86);
+}
+
+@media screen and (max-width: 768px) {
+  .texts > p {
+    width: 80%;
+    font-size: 24px;
+  }
+  .imgCont {
+    height: 200px;
+  }
+  .imgCont > img {
+    height: 150px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .texts > p {
+    width: 90%;
+    font-size: 18px;
+  }
+  .imgCont {
+    height: 150px;
+  }
+  .imgCont > img {
+    height: 100px;
+  }
+}
